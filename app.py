@@ -51,3 +51,4 @@ try:
 except Exception as e:
     st.error("❌ ไม่สามารถอ่านข้อมูลจากไฟล์ Excel ได้")
     st.exception(e)
+
