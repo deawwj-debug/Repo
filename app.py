@@ -1,3 +1,5 @@
+import streamlit as st
+import pandas as pd
 @st.cache_data
 def load_data():
     xls = pd.ExcelFile("data.xlsx")
@@ -67,3 +69,4 @@ def load_data():
         return pd.DataFrame(columns=required_cols)
 
     return pd.concat(all_data, ignore_index=True)
+
